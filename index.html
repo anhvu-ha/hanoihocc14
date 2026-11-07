@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hà Nội học – Ôn tập chương 1–4</title>
+<style>
+:root{--bg:#faf8f4;--fg:#222;--mut:#666;--card:#fff;--bd:#ddd5c8;--ac:#a4262c;--ok:#1b7f3b;--okb:#e3f4e8;--no:#b3261e;--nob:#fbe4e2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17171a;--fg:#eee;--mut:#a0a0a8;--card:#222226;--bd:#3a3a40;--ac:#ff8a80;--ok:#6fd48b;--okb:#17301f;--no:#ff8a80;--nob:#3a1d1b;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:.2em 0;color:var(--ac)}h2{font-size:1.1rem;margin:1.2em 0 .3em;color:var(--ac)}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 16px}
+nav button,.again{font:inherit;font-size:.9rem;padding:6px 12px;border:1px solid var(--bd);border-radius:18px;background:var(--card);color:var(--fg);cursor:pointer}
+nav button.on{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+ul{padding-left:1.2em;margin:.3em 0}li{margin:.25em 0}b.y{color:var(--ac)}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px;margin:12px 0}
+.q p{margin:0 0 8px;font-weight:bold}
+.o{display:block;width:100%;text-align:left;font:inherit;margin:5px 0;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--fg);cursor:pointer}
+.o.ok{background:var(--okb);border-color:var(--ok)}.o.no{background:var(--nob);border-color:var(--no)}
+.e{font-size:.88rem;color:var(--mut);margin-top:4px}
+#sc{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:6px 0;font-weight:bold;z-index:2}
+</style></head><body><main>
+<h1>Giáo trình Hà Nội học – Chương 1–4</h1>
+<nav id="nav"></nav><div id="v"></div></main>
+<script>
+const S={
+"Chương 1":["Địa bàn Hà Nội: Đại La – Thăng Long – Đông Đô – Đông Kinh – Kẻ Chợ; Ngô Quyền (Đường Lâm) kết thúc Bắc thuộc.","<b class=y>2010</b>: UNESCO vinh danh Trung tâm Hoàng thành Thăng Long.","<b class=y>1831</b>: tên “Hà Nội” xuất hiện (Minh Mệnh), tỉnh “trong sông” giữa sông Hồng và sông Đáy.","<b class=y>1888</b> nhượng địa; <b class=y>1903</b> mở rộng sang bờ Bắc sông Hồng (tổng Gia Thụy).","<b class=y>10-10-1954</b> tiếp quản Thủ đô; <b class=y>1961</b> mở rộng lần 1; <b class=y>29-12-1978</b> sáp nhập Ba Vì, Sơn Tây, Hà Đông, Sóc Sơn…; <b class=y>12-8-1991</b> chia Hà Sơn Bình, Hà Nội thu hẹp; <b class=y>29-5-2008</b> sáp nhập Hà Tây, Mê Linh, 4 xã Lương Sơn (6.232.940 dân).","Hà Nội học hiện đại: liên ngành + Khu vực học; Hội thảo quốc tế <b class=y>7–8-10-2010</b>; GS. Trần Quốc Vượng (1934–2005) là người tiên phong.","Ba “vòng” Hà Nội: đô thị cổ truyền → nội thành/ven đô → Hà Nội mở rộng từ 2008."],
+"Chương 2":["Giáp: Vĩnh Phúc, Thái Nguyên (Bắc); Phú Thọ; Hoà Bình; Bắc Giang, Bắc Ninh; Hưng Yên; Hà Nam. Đến 2014: 12 quận, 1 thị xã (Sơn Tây), 17 huyện, 584 đơn vị cấp xã.","Núi Sóc (Bắc), <b class=y>Ba Vì</b> (Tây – đỉnh Vua 1.296 m; đền Thượng thờ Thánh Tản; Đá Chông họp Bộ Chính trị).","Sông Hồng chảy qua Hà Nội <b class=y>163 km</b> (vào Ba Vì, ra Phú Xuyên); sông Đà, Đáy, Đuống, Cầu, Nhuệ; Tô Lịch, Kim Ngưu.","Hồ: Hồ Tây (~500 ha), Hoàn Kiếm, Suối Hai, Quan Sơn – Tuy Lai (“Hạ Long trên cạn”), Đồng Mô – Ngải Sơn.","Karst Mĩ Đức: động Hương Tích (“Nam Thiên Đệ Nhất Động” – Trịnh Sâm), di chỉ Lũng Sàm (Hoà Bình 11.000–8.000 năm trước).","Khí hậu nhiệt đới gió mùa, mùa mưa tháng 5–10; kỉ lục nóng 42,8°C (Láng, 5-1926).","Mốc: <b class=y>1985</b> cầu Chương Dương; <b class=y>2003</b> quận Long Biên; <b class=y>1-2015</b> cầu Nhật Tân; cao tốc Hà Nội – Hải Phòng 105 km."],
+"Chương 3":["Người tiền sử từ hậu kì đá cũ; trống đồng Cổ Loa, hàng vạn mũi tên đồng.","Thời Lý 61 phường → <b class=y>1466</b> còn <b class=y>36 phường</b>; phố Phúc Kiến (nay Lãn Ông) của người Hoa; tháp Báo Thiên, gạch Chăm.","Cư dân gồm cư dân gốc (Hoàn Kiếm, Ba Đình, Tây Hồ, Hai Bà Trưng, Đống Đa) và cư dân từ nơi khác đến.","6 đặc trưng nhân cách: yêu nước – anh hùng; hiếu học; tài hoa; hào hoa – kẻ sĩ; nhân ái – chuộng hoà bình; <b class=y>thanh lịch</b>.","Hiếu học: Văn Miếu – Quốc Tử Giám (2.898 vị khoa bảng), bia tiến sĩ <b class=y>1442</b>; Trường Y Dược Đông Dương <b class=y>1913</b>; Đông Kinh Nghĩa Thục; Hội truyền bá Quốc ngữ (Nguyễn Văn Tố).","<b class=y>16-7-1999</b> UNESCO “Thành phố vì Hoà bình” (La Paz); <b class=y>2000</b> danh hiệu Thủ đô Anh hùng."],
+"Chương 4":["<b class=y>~2 vạn năm</b>: công cụ đá cuội Cổ Loa; Phùng Nguyên (~4000 năm; Văn Điển, Đồng Vông), Đồng Đậu, Gò Mun, Đông Sơn (2000–2500 năm).","<b class=y>218–208 TCN</b> kháng Tần → Thục Phán lập Âu Lạc, đóng đô Cổ Loa; <b class=y>179 TCN</b> Triệu Đà chiếm → Bắc thuộc; <b class=y>111 TCN</b> Tây Vu Vương; <b class=y>40</b> Hai Bà Trưng; <b class=y>542</b> Lý Bí – Vạn Xuân.","<b class=y>607</b> nhà Tuỳ đặt trị sở ở Tống Bình; <b class=y>866</b> Cao Biền đắp La Thành; <b class=y>766</b> Phùng Hưng; <b class=y>905</b> Khúc Thừa Dụ; <b class=y>938</b> Ngô Quyền thắng Bạch Đằng; <b class=y>968</b> Đinh Bộ Lĩnh – Đại Cồ Việt (Hoa Lư).","<b class=y>1010</b> Lý Công Uẩn dời đô, đổi Thăng Long; <b class=y>1054</b> quốc hiệu Đại Việt; <b class=y>1075–1077</b> chống Tống (Lý Thường Kiệt, sông Như Nguyệt); <b class=y>1226</b> nhà Trần.","Chống Mông – Nguyên: <b class=y>1258</b> Đông Bộ Đầu; <b class=y>1285</b> Chương Dương, Hàm Tử; <b class=y>1287–1288</b> Bạch Đằng. Nhà Hồ <b class=y>1400–1407</b> (Tây Đô/Đông Đô); Minh đô hộ <b class=y>1407–1427</b> (Đông Quan); Lam Sơn <b class=y>1418</b>; <b class=y>1428</b> Lê Thái Tổ lên ngôi; Lê Thánh Tông <b class=y>1460–1497</b>; Mạc <b class=y>1527</b>; Lê Trung Hưng <b class=y>1592</b>.","<b class=y>1802</b> nhà Nguyễn; <b class=y>1831</b> Hà Nội; <b class=y>12-1873</b> Cầu Giấy lần 1; <b class=y>1882</b> Hoàng Diệu tuẫn tiết; <b class=y>1883</b> Cầu Giấy lần 2; <b class=y>1-10-1888</b> nhượng địa; <b class=y>1897</b> Doumer xây cầu Long Biên; <b class=y>1907</b> Đông Kinh Nghĩa Thục.","<b class=y>3-1929</b> chi bộ 5D Hàm Long; <b class=y>17-3-1930</b> Đảng bộ Hà Nội (42 Hàng Thiếc); <b class=y>15-8-1945</b> họp Chùa Hà; <b class=y>19-8-1945</b> giành chính quyền (Nhà Hát Lớn); <b class=y>2-9-1945</b> Tuyên ngôn Độc lập (Ba Đình).","<b class=y>6-3-1946</b> Hiệp định Sơ bộ; <b class=y>19-12-1946</b> toàn quốc kháng chiến; <b class=y>10-10-1954</b> tiếp quản; <b class=y>12 ngày đêm 1972</b> B52; <b class=y>27-1-1973</b> Pari; <b class=y>30-4-1975</b>; <b class=y>12-1986</b> Đại hội VI (đổi mới); <b class=y>8-2008</b> mở rộng."]};
+const Q={
+"Chương 1":[["Tên “Hà Nội” chính thức xuất hiện năm nào?",["1010","1802","1831","1888"],2,"Minh Mệnh chia đặt tỉnh"],["Trung tâm Hoàng thành Thăng Long được UNESCO vinh danh năm:",["2000","2008","2010","2015"],2,""],["Ngày tiếp quản Thủ đô:",["19-8-1945","21-7-1954","10-10-1954","30-4-1975"],2,""],["Ngày 29-5-2008, Hà Nội sáp nhập toàn bộ tỉnh nào?",["Vĩnh Phúc","Hà Tây","Bắc Ninh","Hà Nam"],1,"Cùng huyện Mê Linh và 4 xã Lương Sơn"],["Ngày 12-8-1991, Hà Sơn Bình được chia thành:",["Hoà Bình và Hà Tây","Hà Nam và Ninh Bình","Hà Tây và Vĩnh Phú","Hoà Bình và Sơn La"],0,""],["Hội thảo quốc tế đánh dấu sự ra đời Hà Nội học hiện đại diễn ra:",["7–8-10-2010","10-10-2010","24-12-2011","1-8-2008"],0,"Dịp kỉ niệm 1000 năm Thăng Long"],["Hai trụ cột của Hà Nội học truyền thống (1975–2008):",["Kinh tế – Địa lí","Văn hoá – Lịch sử","Dân cư – Đô thị","Văn học – Nghệ thuật"],1,""],["Hà Nội học hiện đại tiếp cận chủ yếu bằng:",["Chuyên ngành đơn lẻ","Liên ngành gắn Khu vực học","Chỉ điền dã","Chỉ thống kê"],1,""]],
+"Chương 2":[["Hai khối núi trung bình của Hà Nội:",["Sóc và Ba Vì","Tam Đảo và Ba Vì","Sóc và Hương Tích","Ba Vì và Sài Sơn"],0,""],["Đỉnh cao nhất Ba Vì (núi Vua) cao khoảng:",["1.000 m","1.296 m","1.500 m","800 m"],1,"Có đền thờ Bác Hồ"],["Đoạn sông Hồng qua Hà Nội dài:",["91 km","77 km","163 km","105 km"],2,"Vào Ba Vì, ra Phú Xuyên"],["Hồ tự nhiên lớn nhất (~500 ha):",["Hoàn Kiếm","Hồ Tây","Linh Đàm","Trúc Bạch"],1,""],["Cầu Nhật Tân khánh thành:",["Tháng 1-2015","1985","Đầu thế kỉ XX","2003"],0,"Nối Tây Hồ – Đông Anh"],["Quận đầu tiên bên tả ngạn sông Hồng (2003):",["Hoàng Mai","Long Biên","Tây Hồ","Cầu Giấy"],1,""],["Động Hương Tích được chúa Trịnh Sâm phong:",["Nam Thiên Đệ Nhất Động","Hạ Long trên cạn","Đệ Nhất Danh Thắng","Bắc Quốc Đệ Nhất Động"],0,""],["Hồ Quan Sơn – Tuy Lai được ví là:",["Hồ Gươm thứ hai","Hạ Long trên cạn","Tây Hồ phương Nam","Đà Lạt Thủ đô"],1,"Gần 100 hòn đảo"]],
+"Chương 3":[["Năm 1466 Thăng Long quy gọn thành bao nhiêu phường?",["61","36","18","72"],1,"Thời Lý có 61 phường"],["Phố Phúc Kiến (nay phố Lãn Ông) gắn với người:",["Chăm","Hoa","Hà Lan","Bồ Đào Nha"],1,"Nghề bốc thuốc Bắc"],["Bia tiến sĩ “Hiền tài là nguyên khí quốc gia” khắc năm:",["1075","1442","1484","1802"],1,""],["Quốc Tử Giám gắn với bao nhiêu vị khoa bảng?",["1.898","2.898","3.898","998"],1,""],["UNESCO trao “Thành phố vì Hoà bình” cho Hà Nội năm:",["1999","2000","2008","2010"],0,"16-7-1999 tại La Paz"],["Danh hiệu Thủ đô Anh hùng được trao năm:",["1999","2000","2010","1986"],1,"Dịp kỉ niệm 990 năm"],["Trường tư thục đầu tiên dạy chữ Quốc ngữ ở Hà Nội:",["Đông Kinh Nghĩa Thục","Quốc Tử Giám","Trường Y Dược Đông Dương","Trường Bưởi"],0,""],["Phủ Toàn quyền Liên bang Đông Dương (5 xứ) đặt tại:",["Sài Gòn","Huế","Hà Nội","Phnôm Pênh"],2,"Bắc Kì, Trung Kì, Nam Kì, Ai Lao, Cao Miên"]],
+"Chương 4 (đến 1802)":[["Kinh đô Âu Lạc của An Dương Vương đặt ở:",["Phong Châu","Cổ Loa","Hoa Lư","Luy Lâu"],1,"Phong Khê – Đông Anh"],["Mốc khởi đầu nghìn năm Bắc thuộc (Triệu Đà chiếm Cổ Loa):",["179 TCN","111 TCN","218 TCN","40"],0,""],["Khởi nghĩa Hai Bà Trưng nổ ra năm:",["40","111 TCN","542","938"],0,"Chống Đông Hán"],["Lý Bí đặt quốc hiệu Vạn Xuân năm:",["542","544","607","866"],0,""],["Ngô Quyền thắng Bạch Đằng, chấm dứt Bắc thuộc năm:",["905","938","968","1010"],1,"939 xưng vương, đóng đô Cổ Loa"],["Lý Công Uẩn dời đô ra Đại La, đổi Thăng Long năm:",["1009","1010","1054","1226"],1,""],["Chiến thắng Đông Bộ Đầu (Hàng Than) năm:",["1258","1285","1288","1075"],0,"Chống Mông – Nguyên lần 1"],["Hội thề Đông Quan gắn với khởi nghĩa của:",["Lê Lợi (Lam Sơn)","Tây Sơn","Hai Bà Trưng","Lý Bí"],0,"Lê Lợi lên ngôi 1428"]],
+"Chương 4 (1802–nay)":[["Năm 1831 Minh Mệnh đổi Thăng Long thành:",["Đông Kinh","Hà Nội","Hoài Đức","Bắc Thành"],1,""],["Pháp biến nội thành Hà Nội thành nhượng địa năm:",["1873","1883","1888","1897"],2,"Đạo dụ Đồng Khánh 1-10-1888"],["Trận Cầu Giấy lần 1 (cùng quân Cờ Đen) vào tháng 12 năm:",["1873","1882","1883","1888"],0,"Giết Francis Garnier"],["Cầu Long Biên được xây dưới thời Toàn quyền:",["Lannessan","P. Doumer","A. Saraut","Rivière"],1,"Nhậm chức 1897"],["Đảng bộ Hà Nội lâm thời thành lập 17-3-1930 tại:",["42 Hàng Thiếc","5D Hàm Long","48 Hàng Ngang","47 Hàng Quạt"],0,""],["Thành uỷ họp quyết định Tổng khởi nghĩa 19-8-1945 tại:",["Nhà Hát Lớn","Chùa Hà – Cầu Giấy","Quảng trường Ba Đình","Tân Trào"],1,"Tối 15-8-1945"],["Toàn quốc kháng chiến bắt đầu ngày:",["6-3-1946","19-12-1946","2-9-1945","21-7-1954"],1,"Trung đoàn Thủ đô cầm chân địch"],["“Điện Biên Phủ trên không” (12 ngày đêm) diễn ra năm:",["1972","1968","1975","1965"],0,"Pari kí 27-1-1973"]]};
+const A=l=>l.map(x=>{const o=x[1].map((t,i)=>[Math.random(),t,i]).sort((a,b)=>a[0]-b[0]);return[x[0],o.map(e=>e[1]),o.findIndex(e=>e[2]===0),x[2]||""]});
+Q["Chương 1"].push(...A([
+["Hà Nội ngày đầu tiếp quản (1954) có:",["36 khu phố nội thành và 4 quận ngoại thành","12 quận nội thành","4 khu phố nội thành","30 quận huyện"]],
+["Năm 1903, Hà Nội lần đầu mở rộng sang bờ Bắc sông Hồng, gồm đất tổng nào?",["Gia Thụy","Từ Liêm","Thanh Trì","Đông Ngạc"],"Huyện Gia Lâm, tỉnh Bắc Ninh"],
+["Lần mở rộng 1961 KHÔNG lấy đất của tỉnh nào?",["Thái Bình","Hà Đông","Bắc Ninh","Vĩnh Phúc"]],
+["Người tiên phong xây dựng ngành Hà Nội học (1934–2005):",["Trần Quốc Vượng","Phan Huy Lê","Sakurai Yumio","Nguyễn Quang Ngọc"]],
+["GS. Sakurai Yumio gọi Hà Nội học hiện đại là:",["Hà Nội học mới","Hà Nội học cũ","Hanoi Sciences","Hà Nội thư"]],
+["Bách khoa thư Hà Nội (địa bàn trước 2008) gồm bao nhiêu tập?",["18 tập","14 tập","11 tập","28 tập"]],
+["Bộ sách của Chương trình KX.09 (NXB Hà Nội, 2010) gồm:",["11 tập","18 tập","4 tập","100 tập"]],
+["Tỉnh Hà Nội năm 1831 gồm:",["4 phủ, 15 huyện","3 phủ, 10 huyện","5 phủ, 12 huyện","2 phủ, 8 huyện"]],
+["Tỉnh Hà Nội 1831 được bao bọc bởi sông Hồng và sông nào?",["Sông Đáy","Sông Cầu","Sông Đà","Sông Đuống"]],
+["Ngô Quyền là người anh hùng đất:",["Đường Lâm","Cổ Loa","Mê Linh","Lam Sơn"]]
+]));
+Q["Chương 2"].push(...A([
+["Đến 2014, nội thành Hà Nội gồm bao nhiêu quận?",["12","9","14","10"]],
+["Hà Nội có bao nhiêu đơn vị hành chính cấp xã/phường/thị trấn (2014)?",["584","177","386","30"]],
+["Phía Bắc Hà Nội giáp:",["Vĩnh Phúc và Thái Nguyên","Phú Thọ và Hoà Bình","Bắc Giang và Bắc Ninh","Hưng Yên và Hà Nam"]],
+["Quận nào KHÔNG thuộc phạm vi kinh thành Thăng Long trước 1831?",["Cầu Giấy","Ba Đình","Hoàn Kiếm","Đống Đa"],"Phạm vi gồm Ba Đình, Hoàn Kiếm, Hai Bà Trưng, Đống Đa"],
+["Sắc lệnh thành lập thành phố Hà Nội (Pháp) ngày:",["18-7-1888","1-10-1888","29-5-2008","20-4-1961"]],
+["Quận Bắc Từ Liêm và Nam Từ Liêm được thành lập:",["27-12-2013","1-8-2008","22-11-1996","6-11-2003"]],
+["Núi Ba Vì hình thành từ phun trào núi lửa (bazan) cách đây khoảng:",["240 triệu năm","2 vạn năm","4000 năm","1 tỉ năm"],"Đầu kỉ Trias"],
+["Đền Thượng trên núi Vua Bà thờ:",["Thánh Tản (Sơn Tinh)","Thánh Gióng","Lý Ông Trọng","Chử Đồng Tử"],"Một trong Tứ Bất Tử"],
+["Địa hình karst (đá vôi) của Hà Nội tập trung chủ yếu ở:",["Mĩ Đức, Chương Mĩ","Sóc Sơn","Gia Lâm","Đông Anh"]],
+["Hồ Tây hình thành từ:",["Khúc uốn của sông (hồ móng ngựa)","Phun trào núi lửa","Đập nhân tạo","Lòng sông cổ bị bỏ rơi"],"Hồ Hoàn Kiếm thuộc loại lòng sông cổ"],
+["Nhiệt độ cao nhất từng ghi nhận (42,8°C) tại:",["Láng, tháng 5-1926","Sơn Tây, 1995","Ba Vì, 1980","Láng, 1998"]],
+["Mùa mưa ở Hà Nội kéo dài:",["Tháng 5 đến tháng 10","Tháng 11 đến tháng 4","Tháng 3 đến tháng 5","Tháng 7 đến tháng 9"]],
+["Rau sắng nổi tiếng gắn với:",["Chùa Hương","Hoài Đức","Thường Tín","Mê Linh"]]
+]));
+Q["Chương 3"].push(...A([
+["Trống đồng Cổ Loa tương đương với trống đồng nào?",["Ngọc Lũ","Hoàng Hạ","Cầu Vực","Sông Tô"]],
+["Phòng tuyến sông Như Nguyệt chống Tống gắn với triều đại:",["Lý","Trần","Lê","Nguyễn"]],
+["Kế “thanh dã” (vườn không nhà trống) được dùng thời:",["Trần","Lý","Lê","Tây Sơn"]],
+["Hội thề Đông Quan do ai chủ trì?",["Nguyễn Trãi","Lê Lợi","Phạm Văn Xảo","Lê Thánh Tông"]],
+["Trường Cao đẳng Sư phạm và Cao đẳng Pháp chính Đông Dương ra đời năm:",["1917","1913","1920","1907"]],
+["Câu “Khéo tay hay nghề, đất lề Kẻ Chợ” nói về đặc trưng:",["Tài hoa, tài tử","Hiếu học","Yêu nước","Nhân ái"]],
+["Câu “Buôn có bạn, bán có phường” thể hiện:",["Tính cộng đồng","Hiếu học","Thanh lịch","Anh hùng"]],
+["Hà Nội có:",["Hơn 500 ngôi chùa, gần 300 lễ hội","Hơn 100 ngôi chùa","Hơn 1000 ngôi chùa","Gần 50 lễ hội"]],
+["Có quan niệm nhập cư phải sống bao lâu mới thành “người Hà Nội”?",["Một đến ba đời","Mười đời","Năm mươi năm","Không cần thời gian"]],
+["Nạn kiêu binh ở Thăng Long thời Lê Trung Hưng gắn với binh lính vùng:",["Thanh – Nghệ An","Cao Bằng","Hải Dương","Nam Định"]],
+["Chương trình học đọc, viết chữ Quốc ngữ trong 80 giờ là của:",["Hoàng Xuân Hãn","Nguyễn Văn Tố","Lương Văn Can","Phan Bội Châu"]]
+]));
+Q["Chương 4 (đến 1802)"].push(...A([
+["Cuộc khởi nghĩa mở đầu chống Bắc thuộc trên đất Hà Nội:",["Tây Vu Vương (111 TCN)","Hai Bà Trưng","Lý Bí","Mai Thúc Loan"]],
+["Thục Phán lãnh đạo nhân dân chống quân Tần do tướng nào chỉ huy?",["Đồ Thư","Triệu Đà","Cao Biền","Tô Định"]],
+["Năm 607, nhà Tuỳ chuyển trụ sở quận Giao Chỉ về:",["Tống Bình","Luy Lâu","Long Biên","Mê Linh"]],
+["Năm 866, Cao Biền đắp lại:",["La Thành","Cổ Loa","Hoàng thành","Thành Vạn Xuân"]],
+["Khúc Thừa Dụ tự xưng Tiết độ sứ năm:",["905","930","938","931"]],
+["Đinh Bộ Lĩnh lên ngôi, đặt tên nước Đại Cồ Việt, đóng đô Hoa Lư năm:",["968","939","1009","944"]],
+["Vua cuối cùng của nhà Lý (đóng đô Thăng Long 1010–1226):",["Lý Chiêu Hoàng","Lý Huệ Tông","Lý Thái Tổ","Lý Nhân Tông"]],
+["Kế sách “tiên phát chế nhân” là của:",["Lý Thường Kiệt","Trần Hưng Đạo","Nguyễn Trãi","Lê Lợi"]],
+["Hội nghị Bình Than diễn ra năm:",["1282","1258","1285","1288"]],
+["Trận Chương Dương (1285) gắn với công lao của:",["Trần Quang Khải","Trần Nhật Duật","Trần Khánh Dư","Phạm Ngũ Lão"]],
+["Thời nhà Hồ, Thăng Long được đổi tên là:",["Đông Đô","Đông Kinh","Đông Quan","Tây Đô"],"Tây Đô đặt ở An Tôn, Thanh Hoá"],
+["Phủ Phụng Thiên thời Lê Thánh Tông gồm 2 huyện:",["Quảng Đức và Vĩnh Xương","Thọ Xương và Từ Liêm","Hoài Đức và Thanh Trì","Hàm Long và Thọ Xương"],"Sau đổi thành Vĩnh Thuận và Thọ Xương"],
+["Lê Thánh Tông dựng bia đá khắc tên tiến sĩ năm:",["1484","1442","1460","1471"]],
+["Sau khi Lê Trung Hưng về Thăng Long (1592), nhà Mạc chạy lên:",["Cao Bằng","Thanh Hoá","Phú Xuân","Lạng Sơn"]]
+]));
+Q["Chương 4 (1802–nay)"].push(...A([
+["Gia Long đổi tên nước thành Việt Nam năm:",["1804","1802","1805","1831"]],
+["Tổng đốc cùng con trai giữ thành Hà Nội năm 1873:",["Nguyễn Tri Phương","Hoàng Diệu","Lưu Vĩnh Phúc","Phan Đình Phùng"]],
+["Tổng đốc Hoàng Diệu tuẫn tiết khi thành thất thủ năm:",["1882","1873","1883","1888"]],
+["Hiệp ước Giáp Tuất được kí năm:",["1874","1883","1884","1888"]],
+["Pháp thành lập Liên bang Đông Dương, lấy Hà Nội làm thủ phủ năm:",["1887","1888","1897","1858"]],
+["Thục trưởng Trường Đông Kinh Nghĩa Thục (1907) là:",["Lương Văn Can","Phan Bội Châu","Nguyễn Văn Tố","Phan Châu Trinh"]],
+["Đông Dương Cộng sản đảng ra đời ở Hà Nội năm:",["1929","1930","1927","1925"],"Tháng 6-1929"],
+["Trần Phú soạn Luận cương Chính trị tại nhà số 90 phố:",["Bông Nhuộm (nay Thợ Nhuộm)","Hàng Ngang","Hàng Bông","Hàm Long"]],
+["Nhật đảo chính Pháp ở Đông Dương ngày:",["9-3-1945","15-8-1945","19-8-1945","2-9-1945"]],
+["Hồ Chí Minh soạn Tuyên ngôn Độc lập tại số nhà:",["48 Hàng Ngang","90 Bông Nhuộm","42 Hàng Thiếc","177 Hàng Bông"]],
+["Hiệp định Giơnevơ được kí ngày:",["21-7-1954","10-10-1954","7-5-1954","9-10-1954"]],
+["Đại hội Đảng toàn quốc lần thứ III diễn ra tại Hà Nội vào:",["Tháng 9-1960","Tháng 12-1986","Năm 1976","Năm 1954"]],
+["Đại hội Đảng lần thứ VI, đề ra đường lối đổi mới, họp tại Hà Nội:",["Tháng 12-1986","Tháng 10-1986","Tháng 7-1995","Năm 1976"]]
+]));
+const nav=document.getElementById("nav"),v=document.getElementById("v");
+const tabs=["Tóm tắt",...Object.keys(Q),"Tổng hợp"];
+const sh=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+function go(t){[...nav.children].forEach(b=>b.className=b.textContent===t?"on":"");
+ if(t==="Tóm tắt"){v.innerHTML=Object.keys(S).map(k=>"<h2>"+k+"</h2><ul>"+S[k].map(x=>"<li>"+x+"</li>").join("")+"</ul>").join("");return}
+ const qs=t==="Tổng hợp"?sh(Object.values(Q).flat()).slice(0,30):sh(Q[t]);
+ let ok=0,done=0;const n=qs.length;
+ v.innerHTML='<div id="sc"></div>';const sc=document.getElementById("sc");
+ const up=()=>{sc.textContent="Đúng "+ok+"/"+done+" · Tổng "+n+" câu"+(done===n?" – Hoàn thành!":"")};up();
+ qs.forEach((q,i)=>{const d=document.createElement("div");d.className="q";d.innerHTML="<p>"+(i+1)+". "+q[0]+"</p>";
+  const bs=q[1].map((o,j)=>{const b=document.createElement("button");b.className="o";b.textContent=String.fromCharCode(65+j)+". "+o;
+   b.onclick=()=>{if(d.dataset.d)return;d.dataset.d=1;done++;if(j===q[2])ok++;
+    bs.forEach((x,k)=>{if(k===q[2])x.classList.add("ok");else if(k===j)x.classList.add("no")});
+    if(q[3]){const e=document.createElement("div");e.className="e";e.textContent="Ghi chú: "+q[3];d.appendChild(e)}up()};
+   d.appendChild(b);return b});v.appendChild(d)});
+ const r=document.createElement("button");r.className="again";r.textContent="Làm lại (xáo trộn)";r.onclick=()=>{go(t);scrollTo(0,0)};v.appendChild(r)}
+tabs.forEach(t=>{const b=document.createElement("button");b.textContent=t;b.onclick=()=>{go(t);scrollTo(0,0)};nav.appendChild(b)});
+go("Tóm tắt");
+</script></body></html>
